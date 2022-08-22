@@ -1,0 +1,27 @@
+.title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 20px;
+  color: black;
+}
+.text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #8d8e97;
+}
+.BurgerMenuItem {
+  width: 236px;
+  height: 53px;
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  background-color: white;
+  border: 1px solid #8d8e97;
+}

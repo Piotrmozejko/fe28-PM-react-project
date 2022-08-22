@@ -1,0 +1,73 @@
+.button {
+  width: 132px;
+  text-align: center;
+  margin: 10px;
+  padding: 16px 0px;
+  border-radius: 2px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+.primary {
+  background-color: #2231aa;
+  color: white;
+}
+.primary:hover {
+  background-color: #5360cd;
+  color: white;
+}
+.primarydisabled {
+  background-color: rgba(68, 68, 87, 0.5);
+  color: rgba(54, 25, 25, 0.502);
+  pointer-events: none;
+}
+
+.secondary {
+  background-color: #e8e8e8;
+  color: #313037;
+}
+.secondary:hover {
+  background-color: #dadada;
+  color: #313037;
+}
+.secondarydisabled {
+  background-color: #e8e8e8;
+  color: #8d8e97;
+  pointer-events: none;
+}
+
+.error {
+  color: #fd3419;
+  border: 1px solid transparent;
+}
+.error:hover {
+  border-color: #dadada;
+  color: #fd3419;
+}
+.errordisabled {
+  color: #8d8e97;
+  pointer-events: none;
+}
+.tabs {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #313037;
+  border-bottom: 4px solid transparent;
+  margin: 0;
+  margin-bottom: -2px;
+}
+.tabs:active {
+  border-bottom: 4px solid #070707;
+}
+.tabs:hover {
+  color: #2231aa;
+}
+.tabsdisabled {
+  color: #8d8e97;
+  pointer-events: none;
+}
