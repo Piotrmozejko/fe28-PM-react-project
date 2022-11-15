@@ -11,17 +11,10 @@
   line-height: 20px;
   color: #8d8e97;
 }
-.BurgerMenuItem {
-  width: 236px;
-  height: 53px;
-  text-align: center;
-  padding-top: 30px;
+.cardTitle {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: black;
-  background-color: white;
-  border: 1px solid #8d8e97;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
 }

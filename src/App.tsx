@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import styles from './App.module.css';
 import Button, { ButtonType } from './Components/Button/';
 import Title from './Components/Title';
+import Card from './Components/Card';
+import Input from './Components/Input';
 
 const Tabs_Name = [
   {
@@ -42,6 +44,10 @@ const Tabs_Name = [
   },
 ];
 function App() {
+  const [isValueInput, setValueInput] = useState<string>('');
+  const onChange = (inputValue: string) => {
+    setValueInput(inputValue);
+  };
   const [isOpened, setOpened] = useState(false);
   return (
     <div className={styles.app}>
@@ -85,12 +91,52 @@ function App() {
           <li key={tab.key}> {tab.title} </li>
         ))}
       </ul>
-      <div className={styles.BurgerMenu} onClick={() => setOpened(!isOpened)}>
-        {isOpened ? 'X' : '='}
+
+      <div className={styles.burgerHeader}>
+        <div className={styles.Burger} onClick={() => setOpened(!isOpened)}>
+          {isOpened ? 'X' : '='}
+          {isOpened && (
+            <div className={styles.BurgerMenu}>
+              <Button
+                type={ButtonType.BurgerItem}
+                title={'Sing in'}
+                onClick={() => alert('aaaa')}
+              />
+              <Button
+                type={ButtonType.BurgerItem}
+                title={'Home'}
+                onClick={() => alert('Home')}
+              />
+              <Button
+                type={ButtonType.BurgerItem}
+                title={'Add post'}
+                onClick={() => alert('Add post')}
+              />
+            </div>
+          )}
+        </div>
+        <Input
+          placeholder="Placeholder"
+          onChange={onChange}
+          value={isValueInput}
+          disabled={isOpened}
+        />
       </div>
-      {isOpened && <Title className="BurgerMenuItem" text={'Sing in'} />}
-      {isOpened && <Title className="BurgerMenuItem" text={'Home'} />}
-      {isOpened && <Title className="BurgerMenuItem" text={'Add Post'} />}
+      <Card
+        id="я"
+        image="../../img/Homer.png"
+        date="28.08.1988"
+        title="I am the best"
+        text="sadsd aDSADKLJ AJKSDNQWKJDN QWJDNWKJNDC WKJDNWKJ"
+        author="Я"
+        lesson_num="2"
+      />
+      <Input
+        placeholder="Placeholder"
+        onChange={onChange}
+        value={isValueInput}
+        disabled={true}
+      />
     </div>
   );
 }

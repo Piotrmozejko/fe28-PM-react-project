@@ -8,6 +8,7 @@ const BUTTON_TYPE: ButtonClassnamesType = {
   [ButtonType.Secondary]: styles.secondary,
   [ButtonType.Error]: styles.error,
   [ButtonType.Tabs]: styles.tabs,
+  [ButtonType.BurgerItem]: styles.BurgerItem,
 };
 
 const Button: FC<ButtonPropsType> = ({
@@ -21,7 +22,6 @@ const Button: FC<ButtonPropsType> = ({
   if (disabled) {
     let typeDisable = type + 'disabled';
     classNameDisable = styles[typeDisable];
-    onClick = () => {};
   }
 
   return (

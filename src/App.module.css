@@ -13,12 +13,25 @@
   flex-direction: row;
   border-bottom: 2px solid #dadada;
 }
-.BurgerMenu {
-  background-color: #5360cd;
+.burgerHeader {
+  background-color: #2231aa;
+  margin-bottom: 10px;
+  border: 1px solid #5360cd;
+  display: flex;
+  flex-direction: row;
+}
+.Burger {
+  background-color: #2231aa;
   width: 84px;
   height: 54px;
   color: white;
   text-align: center;
   font-size: 24px;
   padding-top: 30px;
+  border-right: 1px solid #5360cd;
+}
+.BurgerMenu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
 }

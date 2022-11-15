@@ -3,6 +3,7 @@ export enum ButtonType {
   Secondary = 'secondary',
   Error = 'error',
   Tabs = 'tabs',
+  BurgerItem = 'burgeritem',
 }
 export type ButtonClassnamesType = {
   [k in ButtonType]: string;
