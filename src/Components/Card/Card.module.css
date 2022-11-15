@@ -1,0 +1,55 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 736px;
+  height: 452px;
+  background: #e5e5e5;
+  padding-left: 20px;
+  margin-left: 236px;
+}
+
+.cardItem {
+  display: flex;
+  align-items: center;
+}
+.cardItemText {
+  width: 448px;
+  height: 356px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cardDate {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.cardImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 256px;
+  height: 244px;
+  overflow: hidden;
+}
+.cardIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cardIconRight,
+.cardIconleft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menuCard {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+.cardIconleft {
+  position: relative;
+}
